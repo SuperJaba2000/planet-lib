@@ -37,7 +37,7 @@ function createGenerator(scl, water, arr){
 
   let newGenerator = extend(PlanetGenerator, {
 
-    const gend = newGenerator;
+    let gend = this;
 
     rawHeight(position){
 
