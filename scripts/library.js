@@ -24,7 +24,7 @@ function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAt
 
 
    newPlanet.startSector = startSector;  //number of first planet sector
-   newPlanet.meshLoader = () => new HexMesh(this, 4);
+   newPlanet.meshLoader = () => new HexMesh(newPlanet, 4);
    newPlanet.generator = gen;
 
    return newPlanet;
