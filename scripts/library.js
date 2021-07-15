@@ -429,7 +429,7 @@ const myPlanet = createPlanet(false, "Zeluro", Planets.sun, 1.0, 20.1, 980, true
 )
 
 
-const testSector = createSector("Test Sector", "test-sector", "Yess is a test sector", myPlanet, 35, 4, 30, true)
+const testSector = createSector("Test Sector", "test-sector", "Yess is a test sector", myPlanet, 35, 4, 30, true);
 
 
 
