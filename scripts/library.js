@@ -28,8 +28,8 @@ function createSector(name, mapName, description, planet, sectorNum, difficulty,
 /////////////////////////////
 
 function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAtmosphere, AtmosphereColor, startSector, gen){
-                      ^^^^^^
-                   //not work//
+                    //^^^^^^\\
+                   //not work\\
 
    let newPlanet = extend(Planet, name, parent, 3, size, {});
 
