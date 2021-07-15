@@ -37,7 +37,7 @@ function createGenerator(scl, water, arr){
 
   let newGenerator = extend(PlanetGenerator, {
 
-    const constGen = this;
+    const gend = newGenerator;
 
     rawHeight(position){
 
@@ -125,7 +125,6 @@ function createGenerator(scl, water, arr){
 
                 this.connected.add(to);
                 
-                const gend = constGen;/////////
                 let nscl = rand.random(20, 60);
                 let stroke = rand.random(4, 12);
                 
