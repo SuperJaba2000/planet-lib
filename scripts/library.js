@@ -317,7 +317,7 @@ function createGenerator(scl, water, arr){
                 this.floor = Blocks.metalFloorDamaged;
             };
      
-            if(thus.ore == Blocks.oreTitanium && rand.chance(0.92)){
+            if(this.ore == Blocks.oreTitanium && rand.chance(0.92)){
                 this.floor = Blocks.shale;
             };
         });
