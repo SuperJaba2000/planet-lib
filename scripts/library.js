@@ -285,11 +285,11 @@ function createGenerator(scl, water, arr){
             ores.add(Blocks.oreTitanium);
         };
 
-        if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 2, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.7 * addscl){
+        if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 2, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.8 * addscl){
             ores.add(Blocks.oreThorium);
         };
 
-        if(rand.chance(0.25)){
+        if(rand.chance(0.20)){
             ores.add(Blocks.oreScrap);
         };
 
@@ -339,11 +339,11 @@ function createGenerator(scl, water, arr){
 	
             if(this.floor != null && this.floor != Blocks.basalt && this.floor != Blocks.mud && this.floor.asFloor().hasSurface()){
                 let noise = this.noiseOct(x + 782, y, 5, 0.75, 260);
-                if(noise > 0.72){
-                    this.floor = noise > 0.79 ? purelyWater : (this.floor == purifiedSand ? purelySandWater : purelyWater);
+                if(noise > 0.75){
+                    this.floor = noise > 0.80 ? Blocks.taintedWater : (this.floor == Blocks.sand ? Blocks.sandWater : Blocks.darksandTaintedWater);
                     this.ore = Blocks.air;
-                }else if(noise > 0.67){
-                    this.floor = (this.floor == purifiedSand ? this.floor : purifiedGrass);
+                }else if(noise > 0.60){
+                    this.floor = (this.floor == Blocks.sand ? this.floor : Blocks.darksand);
                     this.ore = Blocks.air;
                 };
             };
