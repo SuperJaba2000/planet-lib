@@ -15,7 +15,7 @@ function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAt
 
    let newPlanet = extend(Planet, name, parent, 3, size, {});
 
-   newPlanet.localizationName
+   newPlanet.localizedName = name;
 
    newPlanet.orbitRadius = OrbitRadius;  //radius of otbit(normal ~20)
    newPlanet.orbitTime = 300900;  //time around orbit
@@ -55,6 +55,9 @@ function createStar(name, parent, size, OrbitRadius, color1, color2, color3, col
       Color.valueOf(color4)
    
    );
+
+
+   return newStar;
 
 }
 
