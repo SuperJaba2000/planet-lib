@@ -2,5 +2,5 @@ name: planet-lib
 displayName: Planet Lib
 author: [accent]SuperJaba2000
 description:"[accent]Library for:[]\n•create planets for mindustry\n•connect created mods"
-minGameVersion: "126"
-version: 0.1
+minGameVersion: "126.2"
+version: 0.2
