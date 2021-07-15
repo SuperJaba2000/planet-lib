@@ -354,26 +354,27 @@ return newGenerator;
 ///////// /// /// /////////
 
 const myPlanet = createPlanet(false, "Zeluro", Planets.sun, 1.0, 20.1, 980, true, "#fca905", 35, 
-createGenerator(7.224189, 2 / 169, 
-   [
-      [Blocks.stone, Blocks.stone, Blocks.stone, Blocks.snow, Blocks.snow, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.snow, Blocks.darksand, Blocks.dacite, Blocks.stone, Blocks.snow],
-      [Blocks.stone, Blocks.water, Blocks.iceSnow, Blocks.snow, Blocks.stone, Blocks.ice, Blocks.stone, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.stone],
-      [Blocks.snow, Blocks.water, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.darksand, Blocks.ice, Blocks.dacite],
+   createGenerator(7.224189, 2 / 169, 
+      [
+         [Blocks.stone, Blocks.stone, Blocks.stone, Blocks.snow, Blocks.snow, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.snow, Blocks.darksand, Blocks.dacite, Blocks.stone, Blocks.snow],
+         [Blocks.stone, Blocks.water, Blocks.iceSnow, Blocks.snow, Blocks.stone, Blocks.ice, Blocks.stone, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.stone],
+         [Blocks.snow, Blocks.water, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.darksand, Blocks.ice, Blocks.dacite],
 
-      [Blocks.water, Blocks.darksandWater, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.ice, Blocks.water, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.darksandWater, Blocks.iceSnow, Blocks.ice],  
-      [Blocks.ice, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.snow, Blocks.dacite],  
-      [Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.ice, Blocks.snow],  
+         [Blocks.water, Blocks.darksandWater, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.ice, Blocks.water, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.darksandWater, Blocks.iceSnow, Blocks.ice],  
+         [Blocks.ice, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.snow, Blocks.dacite],  
+         [Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.ice, Blocks.snow],  
 
-      [Blocks.stone, Blocks.stone, Blocks.snow, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.ice],  
-      [Blocks.dacite, Blocks.stone, Blocks.dacite, Blocks.darksandWater, Blocks.darksandWater, Blocks.darksand, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.stone, , Blocks.snow],  
-      [Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksandWater, Blocks.darksandWater, Blocks.snow, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.snow, Blocks.dacite, Blocks.iceSnow],
+         [Blocks.stone, Blocks.stone, Blocks.snow, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.ice],  
+         [Blocks.dacite, Blocks.stone, Blocks.dacite, Blocks.darksandWater, Blocks.darksandWater, Blocks.darksand, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.stone, , Blocks.snow],  
+         [Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksandWater, Blocks.darksandWater, Blocks.snow, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.snow, Blocks.dacite, Blocks.iceSnow],
 
-      [Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.darksand, Blocks.ice, Blocks.dacite, Blocks.ice], 
-      [Blocks.darksand, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.stone, Blocks.darksand, Blocks.dacite, Blocks.darksandWater, Blocks.iceSnow, Blocks.dacite], 
-      [Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.stonr, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.ice, Blocks.snow],
-      [Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.dacite, Blocks.water, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.snow, Blocks.ice, Blocks.ice]
-   ];
-);
+         [Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.darksand, Blocks.ice, Blocks.dacite, Blocks.ice], 
+         [Blocks.darksand, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.stone, Blocks.darksand, Blocks.dacite, Blocks.darksandWater, Blocks.iceSnow, Blocks.dacite], 
+         [Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.stonr, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.ice, Blocks.snow],
+         [Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.dacite, Blocks.water, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.snow, Blocks.ice, Blocks.ice]
+      ]
+   )
+)
 
 
 
