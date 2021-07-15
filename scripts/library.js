@@ -370,7 +370,7 @@ const myPlanet = createPlanet(false, "Zeluro", Planets.sun, 1.0, 20.1, 980, true
 
          [Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.darksand, Blocks.ice, Blocks.dacite, Blocks.ice], 
          [Blocks.darksand, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.stone, Blocks.darksand, Blocks.dacite, Blocks.darksandWater, Blocks.iceSnow, Blocks.dacite], 
-         [Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.stonr, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.ice, Blocks.snow],
+         [Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.ice, Blocks.snow],
          [Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.dacite, Blocks.water, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.snow, Blocks.ice, Blocks.ice]
       ]
    )
