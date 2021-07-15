@@ -7,9 +7,11 @@ const Ridged = new Packages.arc.util.noise.RidgedPerlin(1, 2);
 
 ////////// /// /// //////////
 ///////// FUNCTIONS /////////
-/////////////////////////////
+////////// /// /// ///////////
 
 function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAtmosphere, AtmosphereColor, startSector, gen){
+                      ^^^^^^
+                   //not work//
 
    let newPlanet = extend(Planet, name, parent, 3, size, {});
 
@@ -31,6 +33,29 @@ function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAt
    newPlanet.generator = gen;
 
    return newPlanet;
+}
+
+//////////////////////////////
+//////////////////////////////
+
+function createStar(name, parent, size, OrbitRadius, color1, color2, color3, color4){
+
+   let newStar = extend(Planet, name, parent, 0, size, {});
+
+   newStar.accessible = false;  //visibility in planet list
+   newStar.bloom = true;
+
+   newStar.meshLoader = () => new SunMesh(
+      
+      this, 4,
+      4, 0.3, 1.7, 1.2, 1, 1.1,
+      Color.valueOf(color1),
+      Color.valueOf(color2),
+      Color.valueOf(color3),
+      Color.valueOf(color4)
+   
+   );
+
 }
 
 ///////////////////////////////
