@@ -170,6 +170,8 @@ function createGenerator(scl, water, arr){
                 if(this.connected.contains(to)) return;
 
                 this.connected.add(to);
+
+                gend = newGenerator;
                 
                 let nscl = rand.random(20, 60);
                 let stroke = rand.random(4, 12);
