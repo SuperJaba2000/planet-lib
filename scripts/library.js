@@ -11,17 +11,17 @@ const Ridged = new Packages.arc.util.noise.RidgedPerlin(1, 2);
 
 function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAtmosphere, AtmosphereColor, startSector, gen){
 
-   let newPlanet = extend(Planet, name, parent, 3, size, {
+   let newPlanet = extend(Planet, name, parent, 3, size, {});
+   newPlanet.orbitRadius = OrbitRadius;  //radius of otbit(normal ~20)
+   newPlanet.orbitTime = 300900;  //time around orbit
+   newPlanet.rotateTime = RotateTime;  //normal is 900
 
-      orbitRadius = OrbitRadius;  //radius of otbit(normal ~20)
-      orbitTime = 300900;  //time around orbit
-      rotateTime = RotateTime;  //normal is 900
-      hasAtmosphere = HasAtmosphere;  //true of false
-      atmosphereColor = Color.valueOf(AtmosphereColor);  //HEX color
-      atmosphereRadIn = 0.05;  //not change
-      atmosphereRadOut = 0.30;  //not change
+   newPlanet.hasAtmosphere = HasAtmosphere;  //true of false
 
-   });
+   if(AtmosphereColor == !null)newPlanet.atmosphereColor = Color.valueOf(AtmosphereColor);  //HEX color
+   newPlanet.atmosphereRadIn = 0.05;  //not change
+   newPlanet.atmosphereRadOut = 0.30;  //not change
+
 
    newPlanet.startSector = startSector;  //number of first planet sector
    newPlanet.meshLoader = () => new HexMesh(this, 4);
