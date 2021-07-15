@@ -28,7 +28,7 @@ function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAt
    newPlanet.generator = gen;
 
    return newPlanet;
-},
+}
 
 ///////////////////////////////
 ///////////////////////////////
