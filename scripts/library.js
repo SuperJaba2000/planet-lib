@@ -7,7 +7,25 @@ const Ridged = new Packages.arc.util.noise.RidgedPerlin(1, 2);
 
 ////////// /// /// //////////
 ///////// FUNCTIONS /////////
-////////// /// /// ///////////
+////////// /// /// //////////
+
+function createSector(name, mapName, description, planet, sectorNum, difficulty, captureWave, alwaysUnl){
+
+   const newSector = new SectorPreset(mapName, planet, sectorNum);
+
+   newSector.localizedName = name;
+   newSector.difficulty = difficulty;
+   newSector.captureWave = captureWave;
+   newSector.description = description;
+
+   newSector.alwaysUnlocked = alwaysUnl;
+
+
+   return newSector;
+}
+
+/////////////////////////////
+/////////////////////////////
 
 function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAtmosphere, AtmosphereColor, startSector, gen){
                       ^^^^^^
@@ -58,7 +76,6 @@ function createStar(name, parent, size, OrbitRadius, color1, color2, color3, col
 
 
    return newStar;
-
 }
 
 ///////////////////////////////
@@ -410,6 +427,9 @@ const myPlanet = createPlanet(false, "Zeluro", Planets.sun, 1.0, 20.1, 980, true
       ]
    )
 )
+
+
+const testSector = createSector("Test Sector", "test-sector", "Yess is a test sector", myPlanet, 35, 4, 30, true)
 
 
 
