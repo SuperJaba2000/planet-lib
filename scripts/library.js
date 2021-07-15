@@ -12,6 +12,9 @@ const Ridged = new Packages.arc.util.noise.RidgedPerlin(1, 2);
 function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAtmosphere, AtmosphereColor, startSector, gen){
 
    let newPlanet = extend(Planet, name, parent, 3, size, {});
+
+   newPlanet.localizationName
+
    newPlanet.orbitRadius = OrbitRadius;  //radius of otbit(normal ~20)
    newPlanet.orbitTime = 300900;  //time around orbit
    newPlanet.rotateTime = RotateTime;  //normal is 900
@@ -266,6 +269,10 @@ function createGenerator(scl, water, arr){
             if(this.ore == Blocks.oreScrap && rand.chance(0.33)){
                 this.floor = Blocks.metalFloorDamaged;
             };
+     
+            if(thus.ore == Blocks.oreTitanium && rand.chance(0.92)){
+                this.floor = Blocks.shale;
+            };
         });
 
         this.trimDark();
@@ -276,7 +283,7 @@ function createGenerator(scl, water, arr){
             //random boulders
             if(this.floor == Blocks.stone){
                 if(Math.abs(0.5 - this.noiseOct(x - 90, y, 4, 0.8, 65)) > 0.02){
-                    this.floor = Blocks.boulder;
+                    this.block = Blocks.boulder;
                 };
             };
         
