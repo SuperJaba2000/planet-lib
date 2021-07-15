@@ -24,7 +24,7 @@ function createPlanet(isStar, name, parent, size, OrbitRadius, RotateTime, HasAt
    });
 
    newPlanet.startSector = startSector;  //number of first planet sector
-   newPlanet.meshLoader = () => new HexMesh(this, 6);
+   newPlanet.meshLoader = () => new HexMesh(this, 4);
    newPlanet.generator = gen;
 
    return newPlanet;
@@ -367,12 +367,12 @@ createGenerator(7.224189, 2 / 169,
 
       [Blocks.stone, Blocks.stone, Blocks.snow, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.ice],  
       [Blocks.dacite, Blocks.stone, Blocks.dacite, Blocks.darksandWater, Blocks.darksandWater, Blocks.darksand, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.stone, , Blocks.snow],  
-      [Blocks.snow, Blocks.darksand, Blocks.darksand, Blocks.darksandWater, Blocks.darksandWater, Blocks.snow, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.snow, Blocks.dacite, Blocks.iceSnow],
+      [Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksandWater, Blocks.darksandWater, Blocks.snow, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.snow, Blocks.dacite, Blocks.iceSnow],
 
-      [Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.darksand, purifiedGrass, whiteStoneFloor, Blocks.stone, purelyWater, Blocks.snow, purifiedSand, purifiedSand, graniteFloor, Blocks.ice], 
-      [Blocks.darksand, Blocks.water, Blocks.stone, Blocks.darksand, graniteFloor, purelyWater, purelyWater, Blocks.ice, whiteStoneFloor, graniteFloor, graniteFloor, whiteStoneFloor], 
-      [Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.ice, andesiteFloor, whiteStoneFloor, purelyWater, whiteStoneFloor, andesiteFloor, Blocks.snow, Blocks.ice, Blocks.snow],
-      [Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.darksandWater, graniteFloor, graniteFloor, andesiteFloor, Blocks.snow, whiteStoneFloor, Blocks.iceSnow, Blocks.snow, Blocks.ice, Blocks.ice]
+      [Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.darksand, Blocks.ice, Blocks.dacite, Blocks.ice], 
+      [Blocks.darksand, Blocks.water, Blocks.stone, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.stone, Blocks.darksand, Blocks.dacite, Blocks.darksandWater, Blocks.iceSnow, Blocks.dacite], 
+      [Blocks.darksand, Blocks.stone, Blocks.stone, Blocks.darksandWater, Blocks.ice, Blocks.darksand, Blocks.stonr, Blocks.darksand, Blocks.stone, Blocks.darksandWater, Blocks.snow, Blocks.ice, Blocks.snow],
+      [Blocks.stone, Blocks.stone, Blocks.darksand, Blocks.darksandWater, Blocks.stone, Blocks.dacite, Blocks.water, Blocks.snow, Blocks.stone, Blocks.darksand, Blocks.snow, Blocks.ice, Blocks.ice]
    ];
 );
 
